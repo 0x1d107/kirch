@@ -19,7 +19,7 @@ double K(double z0,double z1,double sx,double sy,double rx,double ry,double rt,d
 	return ar*as*rick(rt - tau_r - tau_s,10.0);
 }
 double Refl(double ix,double iy,double dx,double dy){
-	return (C - C2)/(C+C2);
+	return ( C2-C)/(C+C2);
 }
 
 int main(){

@@ -90,7 +90,7 @@ int main(){
 	double sx = 0.5;
 	double sy = 0.5;
 	vec3_t sr = {{sx,sy,0}};
-	double ry = 0.5;
+	double ry = 0.0;
 	double h=1e-5;
 	vec3_t Bn = {{BA,BB,BC}};
 	double Bnl = sqrt(BA*BA+BB*BB+BC*BC);
@@ -116,7 +116,7 @@ int main(){
 					sum+=K1+K2+K3;
 				}
 			}
-			cout << sum*dx*dy << ' ';
+			cout << sum*dx*dy/4/M_PI << ' ';
 		} 
 		cout << endl;
 	}
